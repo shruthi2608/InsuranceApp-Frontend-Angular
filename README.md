@@ -1,3 +1,26 @@
+<img width="946" alt="Policy page 2" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/2ea8b89a-0930-473d-91b6-862cfaac6d1d">**1. HOME PAGE**
+<img width="959" alt="login" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/8f40920d-4c3a-49d4-8136-9d775b02e755">
+
+**2. DASHBOARD**
+<img width="947" alt="Policy page 1" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/b6f50ce4-0861-4d8d-8b35-7644b1278e84">
+
+<img width="946" alt="Policy page 2" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/7db2c434-0d09-4465-a0e1-c20dde572859">
+
+**3. SUCCESS TOAST**
+<img width="946" alt="Success toast" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/fe6ee61f-4b32-4245-a64a-70a1e318251c">
+
+**4. WARNING TOAST**
+<img width="959" alt="Warning toast" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/60ff94aa-0e4c-4515-98d3-b9201648c976">
+
+**5. ERROR TOAST**
+<img width="959" alt="Error toast" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/269ed775-2a29-40bc-8dbb-fc0dd63e6f89">
+
+**6. PAYMENT DETAILS**
+<img width="946" alt="Payment details" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/a254d55a-7047-4b10-b9ab-99c3d1821755">
+
+
+
+
 # Cards
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
