@@ -1,4 +1,4 @@
-<img width="946" alt="Policy page 2" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/2ea8b89a-0930-473d-91b6-862cfaac6d1d">**1. HOME PAGE**
+**1. HOME PAGE**
 <img width="959" alt="login" src="https://github.com/shruthi2608/InsuranceApp-Frontend-Angular/assets/99944438/8f40920d-4c3a-49d4-8136-9d775b02e755">
 
 **2. DASHBOARD**
