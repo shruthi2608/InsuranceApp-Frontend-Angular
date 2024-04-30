@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="cards-container">
+        <div class="cards-form">
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="cardName">Cardholder Name</label>
+                    <input type="text" id="cardName" name="cardName" [(ngModel)]="card.cardholderName">
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" [(ngModel)]="card.cardNumber">
+                </div>
+
+                
+                    <div  class="form-group">
+                        <label for="cvc">CVC</label>
+                        <input type="text" id="cvc" name="cvc" [(ngModel)]="card.cvv">
+                    </div>
+                    <div  class="form-group">
+                        <label for="expdate">Expiry date</label>
+                        <input type="text" id="expdate" name="expdate" [(ngModel)]="card.expirationDate">
+                    </div>
+                
+                <div class="form-group">
+                    <button class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card-row">
+                <div class="card-row-details header">
+                    <div class="row">
+                        <div class="col">
+                            <strong>Cardholder Name</strong>
+                        </div>
+                        <div class="col">
+                            <strong>Card Number</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngFor="let card of cards">
+                <div (click)="populateForm(card)" class="card-row" (mouseover)="toggleHover(card.id)" (mouseout)="toggleHover(card.id)">
+                    <div class="card-row-details" [ngClass]="{'hover-effect': isHovered[card.id]}">
+                        <div class="row">
+                            <div class="col">
+                                <span>{{card.cardholderName}}</span>
+                            </div>
+                            <div class="col">
+                                <span>{{card.cardNumber}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-row-action">
+                        <a class="btn btn-danger" (click)="deleteCard(card.id)">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

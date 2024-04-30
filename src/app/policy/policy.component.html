@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div *ngFor="let policy of policies">
+        <ng-container *ngIf="isFirstPolicyForUser(policy)">
+          <div class="user-details-container row">
+            <div class="col-md-4">
+              <img src="/assets/ilink.png" alt="User Image" class="img-fluid">
+            </div>
+          
+            <div class="col-md-8">
+              <div class="user-details">
+                <strong>Employee ID:</strong> {{ policy.loginId }}
+                <br>
+                <strong>Employee Name:</strong> {{ policy.username }}
+                <br>
+                <strong>Company Name:</strong> ILink Systems Ltd
+              </div>
+            </div>
+          </div>
+          
+          
+        </ng-container>
+
+        <div class="policy-details position-relative">
+          <strong><h4>{{ policy.policyName }}</h4></strong>
+          <br>
+          <strong>Policy Info:</strong> {{ getPolicyInfo(policy.policyName) }}
+          <br>
+          <strong>Insurer:</strong> {{ policy.insurer }}<br>
+          <strong>TPA:</strong> {{ policy.tpa }}<br>
+          <strong>Policy Period:</strong> {{ policy.policyPeriod }}
+
+          
+          <div class="horizontal-buttons mt-4">
+            <button class="custom-button">Family Details</button>
+            <button class="custom-button">E-Card</button>
+            <button class="custom-button">Claims</button>
+            <button class="custom-button">Documents</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="d-flex justify-content-center mt-3" (click)="navigateToCards()">
+        <div class="payment-details-box">
+          <div class="payment-details-content text-center">
+            <h3>Payment Details</h3>
+            <p>Click here!
+             
+            </p>
+            <div class="icon-container ml-3" (click)="navigateToCards()">
+              <i class="fas fa-arrow-circle-right fa-lg"></i> 
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+    </div>
+
+    <div class="col-md-4">
+      <div class="help-center">
+        <h2>Help Center</h2>
+        <div class="contact-info-box">
+          <h6><strong>Kajapathy - Account Manager</strong></h6>
+          <p><strong><i class="fas fa-envelope"></i> Email:</strong> support&#64;example.com</p>
+          <p><strong><i class="fas fa-phone"></i> Phone:</strong> +1-123-456-7890</p>
+        </div>
+        <br>
+       <h5> <strong>Tollfree Helpline</strong></h5>
+        <p><strong><i class="fas fa-envelope"></i> Email:</strong> servicehelp&#64;futurisk.com</p>
+        <p><strong><i class="fas fa-phone"></i> Phone:</strong> 1800-1034-569</p>
+      </div>
+      
+      <div class="policy-info-box">
+        <h5 class="mb-3">Available Policies</h5>
+        <div class="policy-scroller">
+          <ul>
+            <li *ngFor="let policyName of policyInfoMapping | keyvalue" class="mb-2">
+              <b>{{ policyName.key }}</b>: {{ policyName.value }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

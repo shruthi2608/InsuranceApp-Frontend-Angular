@@ -1,0 +1,30 @@
+<div class="login-container">
+  <div class="row">
+   
+    <div class="col-md-6">
+      <div class="login-box">
+        <form>
+          <div class="mb-3">
+            <label for="loginId" class="form-label">Login ID</label>
+            <input type="text" class="form-control" id="loginId" name="loginId" [(ngModel)]="loginId">
+          </div>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username">
+          </div>
+          <button type="button" class="btn btn-custom btn-block" (click)="login()">Login</button>
+        </form>
+      </div>
+    </div>
+
+    
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+    
+      <p class="text-center mb-3 cursive-text">Login to explore more..</p>
+    
+     
+      <img src="/assets/login.gif" alt="Login GIF" class="img-fluid">
+    </div>
+    
+  </div>
+</div>

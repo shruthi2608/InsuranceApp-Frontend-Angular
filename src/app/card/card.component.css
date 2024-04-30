@@ -1,0 +1,83 @@
+.container {
+
+  background-image: url('/assets/white.jpg'); 
+
+  background-size: cover; 
+  background-position: center; 
+
+  min-height: 400px; 
+  padding: 20px; 
+  color: black; 
+  font-size: 18px; 
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-form {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-grid {
+  width: 80%;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.card-row:hover {
+  background-color: #f0f0f0;
+}
+
+.card-row-details {
+  flex-grow: 1;
+}
+
+.card-row-action {
+  padding-left: 10px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+.header {
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
+
+.hover-effect {
+  background-color: #d1ecf1; 
+}

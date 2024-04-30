@@ -1,0 +1,58 @@
+.footer {
+  background-color: #7a0101ea;
+  color: #fff;
+  padding: 10px 0; 
+}
+
+.social-media-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icons li {
+  margin: 0 10px;
+}
+
+.social-media-heading {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px; 
+  font-weight: bold;
+}
+
+.social-media-icons a {
+  color: #fff;
+  font-size: 20px; 
+  transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  color: #007bff;
+}
+
+.custom-navbar-bg {
+  background: linear-gradient(to right,#7a0101ea, #3e3e3e); /* Red to Black gradient */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar {
+  padding: 10px 20px;
+}
+
+.navbar-nav .nav-item {
+  font-size: 18px;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #cccccc;
+}
+
+.navbar-nav .nav-link .fas {
+  font-size: 20px;
+}
